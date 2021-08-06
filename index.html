@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cat Fancier Survey Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <main>
+
+        <div id="title-div">
+            <h1 id="title">Cat Fancier Survey Form</h1>
+            <p id="description">
+                Share with us some details about your furry friend.
+            </p>
+        </div>
+
+
+        <form id="survey-form" action="/">
+
+            <!--basic fields-->
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your Email" required>
+
+            <label id="cat-name-label" for="cat-name">Cat's name</label>
+            <input id="cat-name" type="text" placeholder="Enter your cat's name">
+
+            <label id="number-label" for="number">Cat's age</label>
+            <input id="number" type="number" placeholder="Your cat's age" min="0" max="40">
+
+            <!--Radio buttons-->
+            <p class="heading">You got your cat from:</p>
+
+            <div class="form-div" id="radio-buttons">
+                <input type="radio" name="cat-source" id="street" value="street">
+                <label for="street">Street</label>
+                <br>
+                <input type="radio" name="cat-source" id="shelter" value="shelter">
+                <label for="shelter">Shelter</label>
+                <br>
+                <input type="radio" name="cat-source" id="friends" value="friends">
+                <label for="friends">Friends</label>
+                <br>
+                <input type="radio" name="cat-source" id="per-shop" value="pet-shop">
+                <label for="pet-shop">Pet shop</label>
+                <br>
+            </div>
+
+            <!--Dropdown menu-->
+            <label for="dropdown" class="header" name="cat-breed">Your cat's breed</label>
+
+            <select name="cat-breed" id="dropdown">
+                <option value="Tappy">Tabby</option>
+                <option value="Siamese">Siamese</option>
+                <option value="Siberian">Siberian</option>
+                <option value="Persian">Persian</option>
+                <option value="Sphynx">Sphynx</option>
+            </select>
+
+            <!--Checkbox buttons-->
+            <p class="heading">Your cat's personality:</p>
+
+            <div class="form-div" id="checlbox-buttons">
+            <input type="checkbox" name="personality" id="loving" value="loving">
+            <label for="lovng">Loving</label>
+            <br>
+            <input type="checkbox" name="personality" id="playful" value="playful">
+            <label for="playful">Playful</label>
+            <br>
+            <input type="checkbox" name="personality" id="lazy" value="lazy">
+            <label for="lazy">Lazy</label>
+            <br>
+            <input type="checkbox" name="personality" id="naughty" value="naughty">
+            <label for="naughty">Naughty</label>
+            <br>
+            <input type="checkbox" name="personality" id="talkative" value="talkative">
+            <label for="talkative">Talkative</label>
+            <br>
+            <input type="checkbox" name="personality" id="outgoing" value="outgoing">
+            <label for="outgoing">Outgoing</label>
+            <br>
+            </div>
+            </div>
+
+            <!--Text area-->
+            <label for="cat-story">What's so special about your cat?</label>
+
+            <textarea id="cat-story" name="cat-story" rows="5" cols="40" maxlength="200" placeholder="My cat likes sleeping with his legs stretched out..."></textarea>
+
+            <!--Submit button-->
+            <input type="submit" name="submit" id="submit" value="Submit">
+
+        </form>
+
+    </main>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
